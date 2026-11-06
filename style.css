@@ -1,0 +1,86 @@
+:root {
+  --cor-fundo: #111111;
+  --cor-texto: #f2f2f2;
+  --cor-destaque: #c9a227;
+  --fonte: "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonte);
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+header {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: var(--cor-destaque);
+}
+
+header a {
+  background: var(--cor-destaque);
+  color: #111111;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--cor-destaque);
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+section li {
+  background: #1c1c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--cor-destaque);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #888888;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  section ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
