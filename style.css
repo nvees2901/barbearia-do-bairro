@@ -3,6 +3,7 @@
     --cor-texto: #f2f2f2;
     --cor-destaque: #c9a227;
     --fonte: "Segoe UI", Arial, sans-serif;
+    --cor-cartao: #1c1c1c;
 }
 
 * {
@@ -63,13 +64,14 @@ section ul {
 }
 
 section li {
-    background: #1c1c1c;
+    background: var(--cor-cartao);
     padding: 1rem;
     border-radius: 8px;
     border-left: 4px solid var(--cor-destaque);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 footer {
@@ -81,6 +83,7 @@ footer {
 
 section li strong {
     color: var(--cor-destaque);
+    white-space: nowra;
 }
 
 section p {
